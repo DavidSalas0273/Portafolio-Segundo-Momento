@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio – Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ FLOATING CONTROLS ══ -->
+  <div class="floating-controls">
+
+    <!-- 1. Theme toggle -->
+    <button class="fab-btn" id="themeToggle" aria-label="Cambiar tema">
+      <span id="themeIcon">☀️</span>
+    </button>
+
+    <!-- 2. Language -->
+    <div class="fab-group" id="langGroup">
+      <button class="fab-btn" id="langToggle" aria-label="Idioma">🌐</button>
+      <div class="lang-menu" id="langMenu">
+        <button class="lang-opt active" data-lang="es">🇪🇸 Español</button>
+        <button class="lang-opt" data-lang="en">🇬🇧 English</button>
+        <button class="lang-opt" data-lang="de">🇩🇪 Deutsch</button>
+        <button class="lang-opt" data-lang="fr">🇫🇷 Français</button>
+      </div>
+    </div>
+
+    <!-- 3. CV circular menu -->
+    <div class="fab-group" id="cvGroup">
+      <button class="fab-btn fab-cv" id="cvToggle" aria-label="CV">📄</button>
+      <div class="cv-ring" id="cvRing">
+        <a href="#" class="cv-option cv-opt-1" title="Descargar PDF">PDF</a>
+        <a href="#" class="cv-option cv-opt-2" title="Descargar Word">DOC</a>
+        <a href="#" class="cv-option cv-opt-3" title="Vista previa">👁</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi"    data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#proyectos"   data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#contacto"    data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <ul>
+        <li><a href="#sobre-mi"    class="nav-mobile-link" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#proyectos"   class="nav-mobile-link" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#habilidades" class="nav-mobile-link" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#contacto"    class="nav-mobile-link" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text fade-up">
+        <span class="hero-tag" data-i18n="hero.tag">Disponible para proyectos</span>
+        <h1 class="hero-title">
+          <span data-i18n="hero.t1">Diseño &amp;</span><br>
+          <em data-i18n="hero.t2">Desarrollo</em><br>
+          <span data-i18n="hero.t3">Digital</span>
+        </h1>
+        <p class="hero-desc" data-i18n="hero.desc">
+          Creo experiencias digitales que combinan diseño elegante con código limpio.
+          Especializado en interfaces modernas y aplicaciones web de alto impacto.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary" data-i18n="hero.cta1">Ver proyectos</a>
+          <a href="#contacto"  class="btn btn-ghost"   data-i18n="hero.cta2">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-up delay-2">
+        <div class="hero-card">
+          <div class="hero-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-placeholder">
+              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="16" fill="currentColor" opacity="0.6"/><ellipse cx="40" cy="68" rx="26" ry="18" fill="currentColor" opacity="0.4"/></svg>
+            </div>
+          </div>
+          <div class="hero-card-info">
+            <p class="hero-card-name" data-i18n="hero.role">Desarrollador Full Stack</p>
+            <p class="hero-card-loc">📍 Colombia</p>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">5+</span><span class="stat-lbl" data-i18n="hero.s1">Años exp.</span></div>
+            <div class="stat"><span class="stat-num">20+</span><span class="stat-lbl" data-i18n="hero.s2">Proyectos</span></div>
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-lbl" data-i18n="hero.s3">Clientes</span></div>
+          </div>
+        </div>
+        <div class="hero-badge badge-react">React</div>
+        <div class="hero-badge badge-node">Node.js</div>
+        <div class="hero-badge badge-ts">TypeScript</div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ══ ABOUT ME ══ -->
+  <section class="section sobre" id="sobre-mi">
+    <div class="container">
+
+      <div class="about-heading fade-up">
+        <h2 class="about-main-title" data-i18n="about.title">About Me</h2>
+        <div class="about-underline"></div>
+      </div>
+
+      <div class="about-grid fade-up delay-1">
+
+        <!-- Left -->
+        <div class="about-left">
+          <p class="about-bio" data-i18n="about.bio">
+            I'm a passionate developer with +5 years of experience creating modern and scalable
+            web applications. I specialize in frontend development with React and Next.js, always
+            seeking best practices and code excellence.
+          </p>
+
+          <h3 class="soft-skills-title" data-i18n="about.softTitle">Soft Skills</h3>
+          <div class="soft-grid">
+            <div class="soft-pill"><span class="soft-dot"></span><span data-i18n="soft.1">Teamwork</span></div>
+            <div class="soft-pill"><span class="soft-dot"></span><span data-i18n="soft.2">Communication</span></div>
+            <div class="soft-pill"><span class="soft-dot"></span><span data-i18n="soft.3">Problem Solving</span></div>
+            <div class="soft-pill"><span class="soft-dot"></span><span data-i18n="soft.4">Creativity</span></div>
+          </div>
+        </div>
+
+        <!-- Right: Tech grid -->
+        <div class="about-right">
+          <h3 class="tech-section-title" data-i18n="about.techTitle">Technologies</h3>
+          <div class="tech-grid">
+
+            <div class="tech-card" style="--tc:#2563eb;">
+              <div class="tc-icon">&lt;/&gt;</div>
+              <div class="tc-name">Next.js</div>
+            </div>
+            <div class="tech-card" style="--tc:#3b82f6;">
+              <div class="tc-icon">&lt;/&gt;</div>
+              <div class="tc-name">TypeScript</div>
+            </div>
+            <div class="tech-card" style="--tc:#06b6d4;">
+              <div class="tc-icon">&lt;/&gt;</div>
+              <div class="tc-name">React</div>
+            </div>
+            <div class="tech-card" style="--tc:#10b981;">
+              <div class="tc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <div class="tc-name">Tailwind CSS</div>
+            </div>
+
+            <div class="tech-card" style="--tc:#16a34a;">
+              <div class="tc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div class="tc-name">Node.js</div>
+            </div>
+            <div class="tech-card" style="--tc:#15803d;">
+              <div class="tc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div class="tc-name">MongoDB</div>
+            </div>
+            <div class="tech-card" style="--tc:#db2777;">
+              <div class="tc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
+              </div>
+              <div class="tc-name">GraphQL</div>
+            </div>
+            <div class="tech-card" style="--tc:#4f46e5;">
+              <div class="tc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div class="tc-name">PostgreSQL</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROYECTOS ══ -->
+  <section class="section proyectos" id="proyectos">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag" data-i18n="proj.tag">02 — Proyectos</span>
+        <h2 class="section-title"><span data-i18n="proj.t1">Trabajo</span><br><em data-i18n="proj.t2">seleccionado</em></h2>
+      </div>
+      <div class="proyectos-grid">
+
+        <article class="proyecto-card proyecto-featured fade-up">
+          <div class="proyecto-img" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">
+            <div class="proyecto-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-content">
+                <div class="mockup-line w-80"></div><div class="mockup-line w-60"></div><div class="mockup-line w-40"></div>
+                <div class="mockup-blocks"><div class="mockup-block"></div><div class="mockup-block"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-info">
+            <div class="proyecto-meta"><span class="proyecto-num">01</span><span class="proyecto-year">2024</span></div>
+            <h3 data-i18n="proj.p1t">Plataforma E-commerce</h3>
+            <p data-i18n="proj.p1d">Tienda online completa con carrito, pagos y panel de administración. Construida con React y Node.js.</p>
+            <div class="proyecto-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            <a href="#" class="proyecto-link" data-i18n="proj.view">Ver proyecto →</a>
+          </div>
+        </article>
+
+        <article class="proyecto-card fade-up delay-1">
+          <div class="proyecto-img" style="background:linear-gradient(135deg,#0d1117,#1a2744)">
+            <div class="proyecto-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-content">
+                <div class="mockup-line w-70"></div><div class="mockup-line w-50"></div>
+                <div class="mockup-chart">
+                  <div class="chart-bar h-60"></div><div class="chart-bar h-80"></div>
+                  <div class="chart-bar h-40"></div><div class="chart-bar h-90"></div><div class="chart-bar h-55"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-info">
+            <div class="proyecto-meta"><span class="proyecto-num">02</span><span class="proyecto-year">2024</span></div>
+            <h3 data-i18n="proj.p2t">Dashboard Analytics</h3>
+            <p data-i18n="proj.p2d">Panel de visualización de datos en tiempo real con gráficos interactivos y reportes exportables.</p>
+            <div class="proyecto-tags"><span>TypeScript</span><span>Recharts</span><span>Tailwind</span></div>
+            <a href="#" class="proyecto-link" data-i18n="proj.view">Ver proyecto →</a>
+          </div>
+        </article>
+
+        <article class="proyecto-card fade-up delay-2">
+          <div class="proyecto-img" style="background:linear-gradient(135deg,#1a0a2e,#2d1b69)">
+            <div class="proyecto-mockup mobile-mockup">
+              <div class="phone-frame"><div class="phone-screen">
+                <div class="phone-line w-60"></div><div class="phone-line w-80"></div>
+                <div class="phone-line w-40"></div><div class="phone-avatar"></div>
+              </div></div>
+            </div>
+          </div>
+          <div class="proyecto-info">
+            <div class="proyecto-meta"><span class="proyecto-num">03</span><span class="proyecto-year">2023</span></div>
+            <h3 data-i18n="proj.p3t">App Móvil Social</h3>
+            <p data-i18n="proj.p3d">Aplicación de red social con feed personalizado, mensajería instantánea y perfil de usuario.</p>
+            <div class="proyecto-tags"><span>React Native</span><span>Firebase</span></div>
+            <a href="#" class="proyecto-link" data-i18n="proj.view">Ver proyecto →</a>
+          </div>
+        </article>
+
+        <article class="proyecto-card fade-up delay-3">
+          <div class="proyecto-img" style="background:linear-gradient(135deg,#0a1a0f,#1a3a1f)">
+            <div class="proyecto-mockup">
+              <div class="mockup-bar"></div>
+              <div class="mockup-content">
+                <div class="mockup-cards-row"><div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div></div>
+                <div class="mockup-line w-50"></div><div class="mockup-line w-30"></div>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-info">
+            <div class="proyecto-meta"><span class="proyecto-num">04</span><span class="proyecto-year">2023</span></div>
+            <h3 data-i18n="proj.p4t">Sistema de Gestión</h3>
+            <p data-i18n="proj.p4d">CRUD completo para gestión de inventario, usuarios y reportes con roles y permisos.</p>
+            <div class="proyecto-tags"><span>Next.js</span><span>Prisma</span><span>PostgreSQL</span></div>
+            <a href="#" class="proyecto-link" data-i18n="proj.view">Ver proyecto →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ HABILIDADES ══ -->
+  <section class="section habilidades" id="habilidades">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag" data-i18n="sk.tag">03 — Habilidades</span>
+        <h2 class="section-title"><span data-i18n="sk.t1">Stack &amp;</span><br><em data-i18n="sk.t2">herramientas</em></h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-list fade-up">
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">React / Next.js</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">TypeScript</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Node.js / Express</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">MongoDB / PostgreSQL</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">Figma / UI Design</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+        </div>
+        <div class="skills-chips fade-up delay-1">
+          <div class="chips-group"><span class="chips-label" data-i18n="chips.front">Front-end</span><div class="chips"><span class="chip">React</span><span class="chip">Vue.js</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">GSAP</span><span class="chip">shadcn/ui</span></div></div>
+          <div class="chips-group"><span class="chips-label" data-i18n="chips.back">Back-end</span><div class="chips"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">GraphQL</span><span class="chip">Firebase</span></div></div>
+          <div class="chips-group"><span class="chips-label" data-i18n="chips.tools">Herramientas</span><div class="chips"><span class="chip">Vite</span><span class="chip">Git</span><span class="chip">Figma</span><span class="chip">Vercel</span><span class="chip">Docker</span><span class="chip">VS Code</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACTO ══ -->
+  <section class="section contacto" id="contacto">
+    <div class="container">
+      <div class="contacto-inner fade-up">
+        <span class="section-tag" data-i18n="ct.tag">04 — Contacto</span>
+        <h2 class="contacto-title"><span data-i18n="ct.t1">¿Tienes un</span><br><em data-i18n="ct.t2">proyecto en mente?</em></h2>
+        <p class="contacto-desc" data-i18n="ct.desc">Estoy disponible para trabajar en proyectos freelance, colaboraciones y posiciones full-time. ¡Hablemos!</p>
+        <div class="contacto-links">
+          <a href="mailto:hola@portafolio.dev" class="contacto-link"><span>✉️</span><span>hola@portafolio.dev</span></a>
+          <a href="#" class="contacto-link"><span>💼</span><span>LinkedIn</span></a>
+          <a href="#" class="contacto-link"><span>🐙</span><span>GitHub</span></a>
+        </div>
+        <a href="mailto:hola@portafolio.dev" class="btn btn-primary btn-lg" data-i18n="ct.btn">Enviar mensaje →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name">Portfolio © 2024</p>
+        <p class="footer-made" data-i18n="footer.made">Hecho con ♥ en Colombia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

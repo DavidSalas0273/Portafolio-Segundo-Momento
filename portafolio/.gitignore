@@ -1,0 +1,9 @@
+node_modules/
+.css-cache/
+dist/
+.env
+npm-debug.log
+.DS_Store
+
+# Tailwind output (optional)
+css/tailwind.css

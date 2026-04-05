@@ -1,0 +1,15 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i src/css/tailwind-input.css -o css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i src/css/tailwind-input.css -o css/tailwind.css --watch",
+    "dev": "npm run watch:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  }
+}

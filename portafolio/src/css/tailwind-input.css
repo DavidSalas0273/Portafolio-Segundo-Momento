@@ -1,0 +1,5 @@
+/* Entrada Tailwind — NOTA: no incluimos @tailwind base para evitar el reset "preflight" */
+@tailwind components;
+@tailwind utilities;
+
+/* Añade aquí utilidades personalizadas si las necesitas */
