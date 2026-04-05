@@ -564,6 +564,45 @@ em { font-style: italic; font-family: var(--serif); color: var(--accent); }
 .delay-3 { transition-delay:.45s; }
 
 /* ═══════════════════════════════════════
+  TIMELINE
+═══════════════════════════════════════ */
+.timeline-wrap { position: relative; padding: 2rem 0 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem 2rem; }
+.timeline-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--border), transparent 20%); transform: translateX(-50%); }
+.timeline-item { position: relative; padding: 0.25rem 1rem; }
+.timeline-item:nth-child(odd) { grid-column: 1 / 2; justify-self: end; }
+.timeline-item:nth-child(even) { grid-column: 2 / 3; justify-self: start; }
+.timeline-card { background: var(--surface); border: 1px solid var(--border); padding: 1rem; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.22); width: calc(100% - 1rem); }
+.tl-date { display:block; font-family:var(--mono); color:var(--accent); margin-bottom:0.5rem; }
+.tl-title { font-size:1.05rem; margin-bottom:0.4rem; color:var(--light); }
+.tl-desc { color:var(--text2); font-size:0.92rem; }
+.timeline-item::after { content: ''; position: absolute; top: 28px; width: 14px; height: 14px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+.timeline-item:nth-child(odd)::after { right: -8px; }
+.timeline-item:nth-child(even)::after { left: -8px; }
+
+/* ═══════════════════════════════════════
+  TESTIMONIOS
+═══════════════════════════════════════ */
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.testimonial-card { background: var(--surface); border: 1px solid var(--border); padding: 1.25rem; border-radius: 12px; cursor: pointer; transition: transform 0.3s var(--ease), box-shadow 0.3s; position: relative; overflow: hidden; }
+.testimonial-card:focus { outline: 3px solid rgba(124,106,247,0.14); }
+.testimonial-card .test-name { font-weight:700; margin-bottom:6px; color:var(--light); }
+.testimonial-card .test-role { font-family:var(--mono); color:var(--text2); font-size:0.82rem; margin-bottom:8px; }
+.testimonial-card .test-body { color:var(--text2); line-height:1.6; }
+.testimonial-card.expanded { transform: scale(1.06); z-index: 30; box-shadow: 0 20px 60px rgba(0,0,0,0.45); }
+
+/* ═══════════════════════════════════════
+  CONTACT WINDOW (parte inferior)
+═══════════════════════════════════════ */
+.contact-window { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin:1.5rem 0 2rem; background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:1rem; border-radius:12px; border:1px solid var(--border); }
+.contact-item { display:flex; gap:0.9rem; align-items:center; min-width: 190px; }
+.ci-icon { width:40px; height:40px; border-radius:10px; background:var(--surface2); display:flex; align-items:center; justify-content:center; font-size:1.05rem; }
+.ci-label { font-family:var(--mono); font-size:0.75rem; color:var(--text2); }
+.ci-value { display:block; font-weight:600; color:var(--text); }
+.contact-links { margin-left:auto; display:flex; gap:0.5rem; align-items:center; }
+.ci-social { display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; background:var(--surface); border:1px solid var(--border); border-radius:10px; color:var(--text); text-decoration:none; }
+.ci-social svg { display:block; }
+
+/* ═══════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════ */
 @media (max-width: 1000px) {
@@ -577,6 +616,12 @@ em { font-style: italic; font-family: var(--serif); color: var(--accent); }
 
   .about-grid { grid-template-columns:1fr; gap:2.5rem; }
   .tech-grid  { grid-template-columns:repeat(4,1fr); }
+
+  /* Timeline stack on small screens */
+  .timeline-wrap { grid-template-columns: 1fr; }
+  .timeline-line { left: 28px; transform: none; }
+  .timeline-item { justify-self: stretch; padding-left: 2rem; }
+  .timeline-item::after { left: 10px; right: auto; }
 
   .proyectos-grid  { grid-template-columns:1fr; }
   .proyecto-featured { grid-template-columns:1fr; }

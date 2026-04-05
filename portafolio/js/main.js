@@ -102,3 +102,36 @@ const skillObs = new IntersectionObserver(entries => {
 
 const skillSec = document.getElementById('habilidades');
 if (skillSec) skillObs.observe(skillSec);
+
+/* ── TESTIMONIALS INTERACTION ── */
+function setupTestimonials() {
+  const cards = document.querySelectorAll('.testimonial-card');
+  if (!cards.length) return;
+
+  function closeAll(except) {
+    cards.forEach(c => { if (c !== except) c.classList.remove('expanded'); });
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      const isExpanded = card.classList.toggle('expanded');
+      if (isExpanded) closeAll(card);
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.classList.toggle('expanded');
+        closeAll(card.classList.contains('expanded') ? card : null);
+      }
+    });
+  });
+
+  // Close expanded on outside click
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.testimonial-card')) closeAll(null);
+  });
+}
+
+// Initialize after DOM ready
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setupTestimonials);
+else setupTestimonials();
