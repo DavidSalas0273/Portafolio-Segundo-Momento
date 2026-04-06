@@ -75,16 +75,17 @@
       <div class="hero-text fade-up">
         <span class="hero-tag" data-i18n="hero.tag">Disponible para proyectos</span>
         <h1 class="hero-title">
-          <span data-i18n="hero.t1">Diseño &amp;</span><br>
-          <em data-i18n="hero.t2">Desarrollo</em><br>
-          <span data-i18n="hero.t3">Digital</span>
+          <span data-i18n="hero.t1">Desarrollador en proceso</span>
+          <br>
+          <em data-i18n="hero.t2"></em>
+          <br>
+          <span data-i18n="hero.t3"></span>
         </h1>
         <p class="hero-desc" data-i18n="hero.desc">
-          Creo experiencias digitales que combinan diseño elegante con código limpio.
-          Especializado en interfaces modernas y aplicaciones web de alto impacto.
+          Desarrollo experiencias visuales especializado en interfaces y en videojuegos
         </p>
         <div class="hero-actions">
-          <a href="#proyectos" class="btn btn-primary" data-i18n="hero.cta1">Ver proyectos</a>
+          <a href="assets/CV.pdf" class="btn btn-primary" data-i18n="hero.cta1" download>Descargar CV</a>
           <a href="#contacto"  class="btn btn-ghost"   data-i18n="hero.cta2">Contactar</a>
         </div>
       </div>
@@ -93,7 +94,6 @@
           <div class="hero-avatar">
             <div class="avatar-ring"></div>
             <div class="avatar-placeholder">
-              <!-- Sustituye assets/avatar.jpg por tu foto (colócala en la carpeta assets/) -->
               <img src="assets/avatar.jpg" alt="Avatar" class="hero-avatar-img">
             </div>
           </div>
@@ -102,9 +102,8 @@
             <p class="hero-card-loc">📍 Colombia</p>
           </div>
           <div class="hero-stats">
-            <div class="stat"><span class="stat-num">5+</span><span class="stat-lbl" data-i18n="hero.s1">Años exp.</span></div>
+            <div class="stat"><span class="stat-num">Estudiando</span><span class="stat-lbl" data-i18n="hero.s1">Años exp.</span></div>
             <div class="stat"><span class="stat-num">20+</span><span class="stat-lbl" data-i18n="hero.s2">Proyectos</span></div>
-            <div class="stat"><span class="stat-num">10+</span><span class="stat-lbl" data-i18n="hero.s3">Clientes</span></div>
           </div>
         </div>
         <div class="hero-badge badge-react">React</div>
@@ -114,36 +113,27 @@
     </div>
     <div class="scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
-
-  <!-- ══ ABOUT ME ══ -->
-  <section class="section sobre" id="sobre-mi">
+  <!-- ══ SOBRE MÍ ══ -->
+  <section class="section sobre-mi" id="sobre-mi">
     <div class="container">
-
-      <div class="about-heading fade-up">
-        <h2 class="about-main-title" data-i18n="about.title">About Me</h2>
-        <div class="about-underline"></div>
+      <div class="section-header fade-up">
+        <span class="section-tag">01 — Sobre mí</span>
+        <h2 class="section-title">Sobre mí<br><em>Breve presentación</em></h2>
       </div>
 
       <div class="about-grid fade-up delay-1">
-
-        <!-- Left -->
         <div class="about-left">
-          <p class="about-bio" data-i18n="about.bio">
-            I'm a passionate developer with +5 years of experience creating modern and scalable
-            web applications. I specialize in frontend development with React and Next.js, always
-            seeking best practices and code excellence.
-          </p>
-
-          <h3 class="soft-skills-title" data-i18n="about.softTitle">Soft Skills</h3>
-          <div class="soft-grid">
-            <div class="soft-pill"><span class="soft-dot"></span><span data-i18n="soft.1">Teamwork</span></div>
-            <div class="soft-pill"><span class="soft-dot"></span><span data-i18n="soft.2">Communication</span></div>
-            <div class="soft-pill"><span class="soft-dot"></span><span data-i18n="soft.3">Problem Solving</span></div>
-            <div class="soft-pill"><span class="soft-dot"></span><span data-i18n="soft.4">Creativity</span></div>
+          <h3 class="about-title">Hola, soy Alejo</h3>
+          <p class="about-desc">Soy estudiante de Ingeniería de Software con interés en interfaces, experiencias interactivas y desarrollo de videojuegos. Me gusta combinar diseño y código para crear productos útiles y agradables.</p>
+          <div class="about-highlights">
+            <ul>
+              <li>Estudios: Ingeniería de Software</li>
+              <li>Intereses: Frontend, C++ / Unity, UX</li>
+              <li>Ubicación: Pasto, Nariño, Colombia</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Right: Tech grid -->
         <div class="about-right">
           <h3 class="tech-section-title" data-i18n="about.techTitle">Technologies</h3>
           <div class="tech-grid">
@@ -174,27 +164,36 @@
               <div class="tc-name">Node.js</div>
             </div>
             <div class="tech-card" style="--tc:#15803d;">
-              <div class="tc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              <div class="tc-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="64" height="64" rx="8" fill="transparent" />
+                  <text x="50%" y="54%" text-anchor="middle" font-family="monospace" font-size="22" fill="currentColor">C++</text>
+                </svg>
               </div>
-              <div class="tc-name">MongoDB</div>
+              <div class="tc-name">C++</div>
             </div>
             <div class="tech-card" style="--tc:#db2777;">
-              <div class="tc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
+              <div class="tc-icon" aria-hidden="true">
+                <!-- Simple C++ SVG icon -->
+                <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="64" height="64" rx="8" fill="transparent" />
+                  <text x="50%" y="54%" text-anchor="middle" font-family="monospace" font-size="22" fill="currentColor">C++</text>
+                </svg>
               </div>
-              <div class="tc-name">GraphQL</div>
+              <div class="tc-name">C++</div>
             </div>
             <div class="tech-card" style="--tc:#4f46e5;">
-              <div class="tc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              <div class="tc-icon" aria-hidden="true">
+                <!-- Simplified Unity logo mark -->
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L2 9l5 3 5-3 5 3 5-3L12 2z" opacity="0.95" />
+                </svg>
               </div>
-              <div class="tc-name">PostgreSQL</div>
+              <div class="tc-name">Unity</div>
             </div>
 
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -208,7 +207,7 @@
       </div>
       <div class="proyectos-grid">
 
-        <article class="proyecto-card proyecto-featured fade-up">
+  <article class="proyecto-card proyecto-featured fade-up">
           <div class="proyecto-img" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">
             <div class="proyecto-mockup">
               <div class="mockup-bar"></div>
@@ -220,14 +219,14 @@
           </div>
           <div class="proyecto-info">
             <div class="proyecto-meta"><span class="proyecto-num">01</span><span class="proyecto-year">2024</span></div>
-            <h3 data-i18n="proj.p1t">Plataforma E-commerce</h3>
-            <p data-i18n="proj.p1d">Tienda online completa con carrito, pagos y panel de administración. Construida con React y Node.js.</p>
+            <h3>AirSafe</h3>
+            <p>Aplicación de gestión de viajes</p>
             <div class="proyecto-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
-            <a href="#" class="proyecto-link" data-i18n="proj.view">Ver proyecto →</a>
+            <a href="https://github.com/DavidSalas0273/AirSafe.git" class="proyecto-link" target="_blank" rel="noopener">Ver proyecto →</a>
           </div>
         </article>
 
-        <article class="proyecto-card fade-up delay-1">
+  <article class="proyecto-card fade-up delay-1">
           <div class="proyecto-img" style="background:linear-gradient(135deg,#0d1117,#1a2744)">
             <div class="proyecto-mockup">
               <div class="mockup-bar"></div>
@@ -242,14 +241,14 @@
           </div>
           <div class="proyecto-info">
             <div class="proyecto-meta"><span class="proyecto-num">02</span><span class="proyecto-year">2024</span></div>
-            <h3 data-i18n="proj.p2t">Dashboard Analytics</h3>
-            <p data-i18n="proj.p2d">Panel de visualización de datos en tiempo real con gráficos interactivos y reportes exportables.</p>
+            <h3>VetCarePro</h3>
+            <p>Aplicación veterinaria donde puedes gestionar usuarios y mascotas con citas y gestión de vacunas</p>
             <div class="proyecto-tags"><span>TypeScript</span><span>Recharts</span><span>Tailwind</span></div>
-            <a href="#" class="proyecto-link" data-i18n="proj.view">Ver proyecto →</a>
+            <a href="https://github.com/migueltovarb/ISWDISENO202502-2DavidSalas0273.git" class="proyecto-link" target="_blank" rel="noopener">Ver proyecto →</a>
           </div>
         </article>
 
-        <article class="proyecto-card fade-up delay-2">
+  <article class="proyecto-card fade-up delay-2">
           <div class="proyecto-img" style="background:linear-gradient(135deg,#1a0a2e,#2d1b69)">
             <div class="proyecto-mockup mobile-mockup">
               <div class="phone-frame"><div class="phone-screen">
@@ -260,14 +259,14 @@
           </div>
           <div class="proyecto-info">
             <div class="proyecto-meta"><span class="proyecto-num">03</span><span class="proyecto-year">2023</span></div>
-            <h3 data-i18n="proj.p3t">App Móvil Social</h3>
-            <p data-i18n="proj.p3d">Aplicación de red social con feed personalizado, mensajería instantánea y perfil de usuario.</p>
-            <div class="proyecto-tags"><span>React Native</span><span>Firebase</span></div>
-            <a href="#" class="proyecto-link" data-i18n="proj.view">Ver proyecto →</a>
+            <h3>Knoledge</h3>
+            <p>Aplicación de educación con roles de estudiante y maestro donde se pueden gestionar clases y ver clases en línea</p>
+            <div class="proyecto-tags"><span>React</span><span>Firebase</span></div>
+            <a href="https://github.com/DavidSalas0273/Frontend-Knoledge.git" class="proyecto-link" target="_blank" rel="noopener">Ver proyecto →</a>
           </div>
         </article>
 
-        <article class="proyecto-card fade-up delay-3">
+  <article class="proyecto-card fade-up delay-3">
           <div class="proyecto-img" style="background:linear-gradient(135deg,#0a1a0f,#1a3a1f)">
             <div class="proyecto-mockup">
               <div class="mockup-bar"></div>
@@ -279,10 +278,10 @@
           </div>
           <div class="proyecto-info">
             <div class="proyecto-meta"><span class="proyecto-num">04</span><span class="proyecto-year">2023</span></div>
-            <h3 data-i18n="proj.p4t">Sistema de Gestión</h3>
-            <p data-i18n="proj.p4d">CRUD completo para gestión de inventario, usuarios y reportes con roles y permisos.</p>
-            <div class="proyecto-tags"><span>Next.js</span><span>Prisma</span><span>PostgreSQL</span></div>
-            <a href="#" class="proyecto-link" data-i18n="proj.view">Ver proyecto →</a>
+            <h3>Job Conet</h3>
+            <p>Aplicación de búsqueda de trabajo donde puedes solicitar empleo o entrar como empresa y crear plazas donde la gente puede solicitar vacantes</p>
+            <div class="proyecto-tags"><span>Next.js</span><span>Prisma</span><span>Unity</span></div>
+            <a href="https://github.com/DavidSalas0273/JobConet.git" class="proyecto-link" target="_blank" rel="noopener">Ver proyecto →</a>
           </div>
         </article>
 
@@ -303,7 +302,7 @@
           <div class="skill-item"><div class="skill-header"><span class="skill-name">TypeScript</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
           <div class="skill-item"><div class="skill-header"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
           <div class="skill-item"><div class="skill-header"><span class="skill-name">Node.js / Express</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
-          <div class="skill-item"><div class="skill-header"><span class="skill-name">MongoDB / PostgreSQL</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          <div class="skill-item"><div class="skill-header"><span class="skill-name">C++ / Unity</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
           <div class="skill-item"><div class="skill-header"><span class="skill-name">Figma / UI Design</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
         </div>
         <div class="skills-chips fade-up delay-1">
@@ -399,21 +398,21 @@
 
       <div class="testimonials-grid fade-up">
         <article class="testimonial-card" tabindex="0">
-          <h3 class="test-name">María López — CTO, Empresa XYZ</h3>
-          <p class="test-role">Colaboradora</p>
-          <p class="test-body">"Excelente trabajo entregando una UI accesible y mantenible. Superó expectativas."</p>
+          <h3 class="test-name">Ing. Carlos Guillermo Ibarra</h3>
+          <p class="test-role">Backend en Smartbank</p>
+          <p class="test-body">David ha presentado gran interés en trabajos relacionados con el frontend en diferentes campos y desarrollo impuestos en el cual superó las expectativas</p>
         </article>
 
         <article class="testimonial-card" tabindex="0">
-          <h3 class="test-name">Carlos Pérez — Product Manager</h3>
-          <p class="test-role">Cliente</p>
-          <p class="test-body">"Rápida adaptación y solución a problemas complejos, comunicación clara."</p>
+          <h3 class="test-name">Chef. Gustavo De Jesús Gaviria</h3>
+          <p class="test-role">Ex jefe · La Merced</p>
+          <p class="test-body">David Alejandro fue alumno mío durante 8 meses donde aprendió la labor de cocina como un arte más que como un trabajo. Destacó su liderazgo y su empeño por mejorar. Espero que retome su labor en la cocina</p>
         </article>
 
         <article class="testimonial-card" tabindex="0">
-          <h3 class="test-name">Ana Gómez — Diseñadora</h3>
-          <p class="test-role">Compañera</p>
-          <p class="test-body">"Gran ojo para el detalle visual y excelente colaboración en diseño y código."</p>
+          <h3 class="test-name">Wiliam Esteban</h3>
+          <p class="test-role">Dueño de DeepClean</p>
+          <p class="test-body">Actualmente Alejo es mi trabajador, en él veo mucho potencial y muchas ganas de comerse el mundo. Espero que su paso por la empresa sea corto para que así pueda trabajar de lo que a él más le guste</p>
         </article>
       </div>
     </div>
