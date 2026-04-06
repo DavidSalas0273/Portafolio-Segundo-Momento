@@ -305,22 +305,27 @@ em { font-style: italic; font-family: var(--serif); color: var(--accent); }
   border-radius: 20px; padding: 2rem;
   width: 100%; max-width: 320px; position: relative; z-index: 1;
 }
-.hero-avatar { position: relative; width: 80px; height: 80px; margin: 0 auto 1.25rem; }
+.hero-avatar { position: relative; width: 120px; height: 120px; margin: 0 auto 1.25rem; }
 .avatar-ring {
-  position: absolute; inset: -4px; border-radius: 50%;
+  position: absolute; inset: -6px; border-radius: 50%;
   border: 2px solid transparent;
   background: linear-gradient(135deg, var(--accent), var(--accent2)) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out; mask-composite: exclude;
 }
 .avatar-placeholder {
-  width: 80px; height: 80px; border-radius: 50%;
+  width: 120px; height: 120px; border-radius: 50%;
   background: var(--surface2);
   display: flex; align-items: center; justify-content: center;
   color: var(--text2); overflow: hidden;
 }
-.avatar-placeholder svg { width: 50px; }
-.hero-avatar-img { width: 80px; height: 80px; object-fit: cover; display: block; border-radius: 50%; }
+.avatar-placeholder svg { width: 70px; }
+.hero-avatar-img { width: 120px; height: 120px; object-fit: cover; display: block; border-radius: 50%; }
+/* Ensure avatar has no animations or transitions */
+.hero-avatar-img, .avatar-ring, .avatar-placeholder {
+  transition: none !important;
+  animation: none !important;
+}
 .hero-card-info { text-align: center; margin-bottom: 1.5rem; }
 .hero-card-name { font-weight: 600; font-size: 0.95rem; }
 .hero-card-loc  { color: var(--text2); font-size: 0.82rem; margin-top: 0.2rem; }
