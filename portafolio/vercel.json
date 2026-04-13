@@ -1,10 +1,7 @@
 {
   "rewrites": [
     { "source": "/(?!api)(.*)", "destination": "/index.html" }
-  ]
-}
-{
-  "outputDirectory": ".",
+  ],
   "cleanUrls": true,
   "trailingSlash": false
 }
