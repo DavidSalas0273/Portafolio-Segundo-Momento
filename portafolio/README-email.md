@@ -1,36 +1,11 @@
-Email API
-=========
+README about the temporary email API
+=================================
 
-He añadido dos formas de exponer una API que envía emails desde el formulario de contacto:
+Este archivo documentaba una implementación temporal para enviar correos desde el formulario de contacto.
 
-- `api/send-email.js` — función serverless preparada para Vercel (coloca las variables de entorno en el dashboard de Vercel).
-- `server/index.js` — servidor Express local si prefieres ejecutar la API en tu propio host.
+El proyecto se ha convertido en un sitio estático destinado a desplegarse en plataformas como Vercel. Cualquier
+implementación de backend (API para envío de correo) fue neutralizada o eliminada para evitar comportamiento
+no deseado en despliegues estáticos.
 
-Variables de entorno (copia `.env.example` a `.env` o configúralas en Vercel):
-
-- SMTP_HOST, SMTP_PORT, SMTP_SECURE, SMTP_USER, SMTP_PASS
-- EMAIL_TO (correo destino)
-- EMAIL_FROM (opcional)
-
-Ejemplo de consumo desde el front-end (fetch desde el formulario):
-
-```javascript
-async function sendContact(payload) {
-  // si despliegas en Vercel, apunta a /api/send-email
-  // si usas el servidor local, apunta a http://tu-dominio:3000/send-email
-  const endpoint = '/api/send-email';
-  const res = await fetch(endpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  });
-  return res.json();
-}
-
-// payload: { name, email, message }
-```
-
-Seguridad y recomendaciones:
-- No guardes credenciales en el repositorio. Usa variables de entorno.
-- Para producción, recomiendo usar servicios como SendGrid, Mailgun o Amazon SES y sus SDKs — Nodemailer con SMTP funciona bien pero puede llegar a límites de envío si usas proveedores genéricos.
-- Si publicas en GitHub, añade `.env` a `.gitignore` (no lo he añadido automáticamente aquí).
+Si en el futuro deseas una solución de correo, puedo añadir una implementación limpia y opcional (por ejemplo,
+una función serverless con instrucciones de despliegue y variables de entorno) y documentarla aquí.
