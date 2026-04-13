@@ -491,6 +491,11 @@ em { font-style: italic; font-family: var(--serif); color: var(--accent); }
   transition: all 0.3s var(--ease);
   display: flex; flex-direction: column;
 }
+
+/* Make the last project card span full width (match featured size) */
+.proyectos-grid > article.proyecto-card:last-of-type {
+  grid-column: 1 / -1;
+}
 .proyecto-card:hover { border-color: rgba(200,169,110,0.35); transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.4); }
 [data-theme="light"] .proyecto-card:hover { border-color: rgba(204,0,0,0.35); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
 .proyecto-featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1.2fr 1fr; }
