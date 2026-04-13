@@ -1,0 +1,7 @@
+api/
+server/
+README-email.md
+.env.example
+package-lock.json
+node_modules/
+.vercel/
