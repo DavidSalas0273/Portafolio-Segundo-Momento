@@ -791,6 +791,40 @@ em { font-style: italic; font-family: var(--serif); color: var(--accent); }
   gap: 0.75rem;
 }
 
+/* ================================
+   Contact panel centered & styled
+   ================================ */
+/* When the contact layout contains only the left column, center it and make it a card */
+.contact-layout > .contact-left {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 720px;
+  width: 100%;
+}
+
+.contact-left {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem 1.5rem 1.75rem;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.35);
+}
+
+.contact-left-title { text-align: center; }
+.contact-info-list { gap: 1rem; }
+.contact-info-item { align-items: flex-start; }
+.ci-icon-wrap { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; }
+.ci-label { color: var(--text); }
+.ci-value { color: var(--text); }
+.contact-social-title { text-align: center; margin-top: 0.8rem; }
+.contact-social-links { justify-content: center; }
+.ci-social { width:44px; height:44px; border-radius:8px; }
+
+@media (max-width: 860px) {
+  .contact-left { padding: 1rem; border-radius: 12px; }
+  .contact-layout > .contact-left { max-width: 100%; }
+}
+
 .ci-social {
   width: 44px;
   height: 44px;
