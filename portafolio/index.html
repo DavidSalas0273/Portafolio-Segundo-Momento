@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio – Full Stack Developer</title>
+  <title data-i18n="meta.title">Portafolio – Full Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
     <div class="fab-group" id="cvGroup">
       <button class="fab-btn fab-cv" id="cvToggle" aria-label="CV">📄</button>
       <div class="cv-ring" id="cvRing">
-        <a href="public/cv-david-salas.pdf" download="CV-David-Alejandro-Salas-Ibarra.pdf" class="cv-option cv-opt-1" title="Descargar PDF">PDF</a>
+  <a href="public/cv-david-salas.pdf" download="CV-David-Alejandro-Salas-Ibarra.pdf" class="cv-option cv-opt-1" title="Descargar PDF" data-i18n="cv.menu">PDF</a>
       
       
       </div>
@@ -89,6 +89,7 @@
             href="public/cv-david-salas.pdf" 
             download="CV-David-Alejandro-Salas-Ibarra.pdf" 
             class="btn btn-primary btn-lg"
+            data-i18n="hero.cta_download"
           >
             Descargar CV
           </a>
@@ -108,7 +109,7 @@
             <p class="hero-card-loc">📍 Colombia</p>
           </div>
           <div class="hero-stats">
-            <div class="stat"><span class="stat-num">Estudiando</span><span class="stat-lbl" data-i18n="hero.s1">Años exp.</span></div>
+            <div class="stat"><span class="stat-num" data-i18n="hero.stat1">Estudiando</span><span class="stat-lbl" data-i18n="hero.s1">Años exp.</span></div>
             <div class="stat"><span class="stat-num">20+</span><span class="stat-lbl" data-i18n="hero.s2">Proyectos</span></div>
           </div>
         </div>
@@ -117,25 +118,25 @@
         <div class="hero-badge badge-ts">TypeScript</div>
       </div>
     </div>
-    <div class="scroll-indicator"><span>Scroll</span><div class="scroll-line"></div></div>
+  <div class="scroll-indicator"><span data-i18n="scroll.indicator">Scroll</span><div class="scroll-line"></div></div>
   </section>
   <!-- ══ SOBRE MÍ ══ -->
   <section class="section sobre-mi" id="sobre-mi">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">01 — Sobre mí</span>
-        <h2 class="section-title">Sobre mí<br><em>Breve presentación</em></h2>
+  <span class="section-tag" data-i18n="about.tag">01 — Sobre mí</span>
+  <h2 class="section-title"><span data-i18n="about.title">Sobre mí</span><br><em data-i18n="about.subtitle">Breve presentación</em></h2>
       </div>
 
       <div class="about-grid fade-up delay-1">
         <div class="about-left">
-          <h3 class="about-title">Hola, soy Alejo</h3>
-          <p class="about-desc">Soy estudiante de Ingeniería de Software con interés en interfaces, experiencias interactivas y desarrollo de videojuegos. Me gusta combinar diseño y código para crear productos útiles y agradables.</p>
+          <h3 class="about-title" data-i18n="about.greeting">Hola, soy Alejo</h3>
+          <p class="about-desc" data-i18n="about.bio">Soy estudiante de Ingeniería de Software con interés en interfaces, experiencias interactivas y desarrollo de videojuegos. Me gusta combinar diseño y código para crear productos útiles y agradables.</p>
           <div class="about-highlights">
             <ul>
-              <li>Estudios: Ingeniería de Software</li>
-              <li>Intereses: Frontend, C++ / Unity, UX</li>
-              <li>Ubicación: Pasto, Nariño, Colombia</li>
+              <li data-i18n="about.hl.education">Estudios: Ingeniería de Software</li>
+              <li data-i18n="about.hl.interests">Intereses: Frontend, C++ / Unity, UX</li>
+              <li data-i18n="about.hl.location">Ubicación: Pasto, Nariño, Colombia</li>
             </ul>
           </div>
         </div>
@@ -221,10 +222,10 @@
           </div>
           <div class="proyecto-info">
             <div class="proyecto-meta"><span class="proyecto-num">01</span><span class="proyecto-year">2024</span></div>
-            <h3>AirSafe</h3>
-            <p>Es un sistema que monitorea en tiempo real datos de aeronaves para detectar emergencias aéreas (como secuestros o fallas de comunicación) mediante códigos “squawk”. Genera alertas, muestra información en consola o web y registra los eventos para seguimiento.</p>
+              <h3 data-i18n="proj.airsafe.title">AirSafe</h3>
+              <p data-i18n="proj.airsafe.desc">Es un sistema que monitorea en tiempo real datos de aeronaves para detectar emergencias aéreas (como secuestros o fallas de comunicación) mediante códigos “squawk”. Genera alertas, muestra información en consola o web y registra los eventos para seguimiento.</p>
             <div class="proyecto-tags"><span>Java</span><span>HTML</span><span>CSS</span></div>
-            <a href="https://github.com/DavidSalas0273/AirSafe.git" class="proyecto-link" target="_blank" rel="noopener">Ver proyecto →</a>
+            <a href="https://github.com/DavidSalas0273/AirSafe.git" class="proyecto-link" target="_blank" rel="noopener" data-i18n="proj.view">Ver proyecto →</a>
           </div>
         </article>
 
@@ -243,10 +244,10 @@
           </div>
           <div class="proyecto-info">
             <div class="proyecto-meta"><span class="proyecto-num">02</span><span class="proyecto-year">2024</span></div>
-            <h3>Vet Care Pro</h3>
-            <p>Es un sistema de gestión para clínicas veterinarias enfocado en centralizar operaciones como citas, historial clínico de mascotas, inventario y procesos administrativos.</p>
+            <h3 data-i18n="proj.vet.title">Vet Care Pro</h3>
+            <p data-i18n="proj.vet.desc">Es un sistema de gestión para clínicas veterinarias enfocado en centralizar operaciones como citas, historial clínico de mascotas, inventario y procesos administrativos.</p>
             <div class="proyecto-tags"><span>Desarrollo web</span><span>Base de datos (gestión pacientes)</span><span>Backend: Java · MongoDB</span><span>Frontend: HTML · CSS · JavaScript</span><span>Sistema de roles/usuarios</span></div>
-            <a href="https://github.com/migueltovarb/ISWDISENO202502-2DavidSalas0273.git" class="proyecto-link" target="_blank" rel="noopener">Ver proyecto →</a>
+            <a href="https://github.com/migueltovarb/ISWDISENO202502-2DavidSalas0273.git" class="proyecto-link" target="_blank" rel="noopener" data-i18n="proj.view">Ver proyecto →</a>
           </div>
         </article>
 
@@ -261,10 +262,10 @@
           </div>
           <div class="proyecto-info">
             <div class="proyecto-meta"><span class="proyecto-num">03</span><span class="proyecto-year">2023</span></div>
-            <h3>Knoledge</h3>
-            <p>Repositorio enfocado en aprendizaje y práctica de desarrollo frontend: ejemplos, ejercicios y pequeños proyectos orientados a interfaces web y experiencia de usuario.</p>
+            <h3 data-i18n="proj.knoledge.title">Knoledge</h3>
+            <p data-i18n="proj.knoledge.desc">Repositorio enfocado en aprendizaje y práctica de desarrollo frontend: ejemplos, ejercicios y pequeños proyectos orientados a interfaces web y experiencia de usuario.</p>
             <div class="proyecto-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Frontend</span></div>
-            <a href="https://github.com/DavidSalas0273/Frontend-Knoledge.git" class="proyecto-link" target="_blank" rel="noopener">Ver proyecto →</a>
+            <a href="https://github.com/DavidSalas0273/Frontend-Knoledge.git" class="proyecto-link" target="_blank" rel="noopener" data-i18n="proj.view">Ver proyecto →</a>
           </div>
         </article>
 
@@ -280,10 +281,10 @@
           </div>
           <div class="proyecto-info">
             <div class="proyecto-meta"><span class="proyecto-num">04</span><span class="proyecto-year">2023</span></div>
-            <h3>JobConect</h3>
-            <p>Sistema de búsqueda de oportunidades laborales enfocado en facilitar el encuentro entre empresas y personas buscando empleo, especialmente orientado al sector informático.</p>
+            <h3 data-i18n="proj.job.title">JobConect</h3>
+            <p data-i18n="proj.job.desc">Sistema de búsqueda de oportunidades laborales enfocado en facilitar el encuentro entre empresas y personas buscando empleo, especialmente orientado al sector informático.</p>
             <div class="proyecto-tags"><span>Python</span><span>HTML</span><span>CSS</span></div>
-            <a href="https://github.com/DavidSalas0273/JobConet.git" class="proyecto-link" target="_blank" rel="noopener">Ver proyecto →</a>
+            <a href="https://github.com/DavidSalas0273/JobConet.git" class="proyecto-link" target="_blank" rel="noopener" data-i18n="proj.view">Ver proyecto →</a>
           </div>
         </article>
 
@@ -319,9 +320,9 @@
   <!-- ══ TIMELINE — EXPERIENCIA & ESTUDIOS ══ -->
 <section class="section timeline" id="timeline">
   <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">01 — Historia</span>
-      <h2 class="section-title">Línea de tiempo<br><em>Experiencia & Estudios</em></h2>
+      <div class="section-header fade-up">
+      <span class="section-tag" data-i18n="timeline.tag">01 — Historia</span>
+      <h2 class="section-title" data-i18n="timeline.title">Línea de tiempo<br><em>Experiencia & Estudios</em></h2>
     </div>
 
     <div class="timeline-wrap fade-up">
@@ -332,8 +333,8 @@
         <div class="tl-dot" aria-hidden="true"></div>
         <div class="timeline-card">
           <span class="tl-tag">Estudio</span>
-          <h3 class="tl-title">Técnico en Gastronomía & Culinaria · SENA</h3>
-          <p class="tl-desc">Hice un técnico en Gastronomía y Culinaria en el SENA.</p>
+          <h3 class="tl-title" data-i18n="tl.2022.title">Técnico en Gastronomía &amp; Culinaria · SENA</h3>
+          <p class="tl-desc" data-i18n="tl.2022.desc">Hice un técnico en Gastronomía y Culinaria en el SENA.</p>
         </div>
       </article>
 
@@ -342,8 +343,8 @@
         <div class="tl-dot" aria-hidden="true"></div>
         <div class="timeline-card">
           <span class="tl-tag">Prácticas</span>
-          <h3 class="tl-title">Prácticas · Restaurante La Merced</h3>
-          <p class="tl-desc">Realicé mis prácticas profesionales en el Restaurante La Merced.</p>
+          <h3 class="tl-title" data-i18n="tl.2023.title">Prácticas · Restaurante La Merced</h3>
+          <p class="tl-desc" data-i18n="tl.2023.desc">Realicé mis prácticas profesionales en el Restaurante La Merced.</p>
         </div>
       </article>
 
@@ -352,8 +353,8 @@
         <div class="tl-dot" aria-hidden="true"></div>
         <div class="timeline-card">
           <span class="tl-tag">Estudio</span>
-          <h3 class="tl-title">Ingeniería de Software · Universidad Cooperativa de Colombia</h3>
-          <p class="tl-desc">Inicié mis estudios como Ingeniero de Software en la Universidad Cooperativa de Colombia.</p>
+          <h3 class="tl-title" data-i18n="tl.2024.title">Ingeniería de Software · Universidad Cooperativa de Colombia</h3>
+          <p class="tl-desc" data-i18n="tl.2024.desc">Inicié mis estudios como Ingeniero de Software en la Universidad Cooperativa de Colombia.</p>
         </div>
       </article>
 
@@ -362,8 +363,8 @@
         <div class="tl-dot" aria-hidden="true"></div>
         <div class="timeline-card">
           <span class="tl-tag">Trabajo</span>
-          <h3 class="tl-title">Cleaner · DeepClean</h3>
-          <p class="tl-desc">Diciembre 2025 — Empecé a trabajar en la empresa DeepClean como Cleaner.</p>
+          <h3 class="tl-title" data-i18n="tl.2025.title">Cleaner · DeepClean</h3>
+          <p class="tl-desc" data-i18n="tl.2025.desc">Diciembre 2025 — Empecé a trabajar en la empresa DeepClean como Cleaner.</p>
         </div>
       </article>
 
@@ -380,21 +381,21 @@
 
       <div class="testimonials-grid fade-up">
         <article class="testimonial-card" tabindex="0">
-          <h3 class="test-name">Ing. Carlos Guillermo Ibarra</h3>
-          <p class="test-role">Backend en Smartbank</p>
-          <p class="test-body">David ha presentado gran interés en trabajos relacionados con el frontend en diferentes campos y desarrollo impuestos en el cual superó las expectativas</p>
+          <h3 class="test-name" data-i18n="test.1.name">Ing. Carlos Guillermo Ibarra</h3>
+          <p class="test-role" data-i18n="test.1.role">Backend en Smartbank</p>
+          <p class="test-body" data-i18n="test.1.body">David ha presentado gran interés en trabajos relacionados con el frontend en diferentes campos y desarrollo impuestos en el cual superó las expectativas</p>
         </article>
 
         <article class="testimonial-card" tabindex="0">
-          <h3 class="test-name">Chef. Gustavo De Jesús Gaviria</h3>
-          <p class="test-role">Ex jefe · La Merced</p>
-          <p class="test-body">David Alejandro fue alumno mío durante 8 meses donde aprendió la labor de cocina como un arte más que como un trabajo. Destacó su liderazgo y su empeño por mejorar. Espero que retome su labor en la cocina</p>
+          <h3 class="test-name" data-i18n="test.2.name">Chef. Gustavo De Jesús Gaviria</h3>
+          <p class="test-role" data-i18n="test.2.role">Ex jefe · La Merced</p>
+          <p class="test-body" data-i18n="test.2.body">David Alejandro fue alumno mío durante 8 meses donde aprendió la labor de cocina como un arte más que como un trabajo. Destacó su liderazgo y su empeño por mejorar. Espero que retome su labor en la cocina</p>
         </article>
 
         <article class="testimonial-card" tabindex="0">
-          <h3 class="test-name">Wiliam Esteban</h3>
-          <p class="test-role">Dueño de DeepClean</p>
-          <p class="test-body">Actualmente Alejo es mi trabajador, en él veo mucho potencial y muchas ganas de comerse el mundo. Espero que su paso por la empresa sea corto para que así pueda trabajar de lo que a él más le guste</p>
+          <h3 class="test-name" data-i18n="test.3.name">Wiliam Esteban</h3>
+          <p class="test-role" data-i18n="test.3.role">Dueño de DeepClean</p>
+          <p class="test-body" data-i18n="test.3.body">Actualmente Alejo es mi trabajador, en él veo mucho potencial y muchas ganas de comerse el mundo. Espero que su paso por la empresa sea corto para que así pueda trabajar de lo que a él más le guste</p>
         </article>
       </div>
     </div>
@@ -403,9 +404,9 @@
   <!-- ══ CONTACTO ══ -->
   <section class="section contacto" id="contacto">
   <div class="container">
-    <div class="section-header fade-up">
+      <div class="section-header fade-up">
       <span class="section-tag" data-i18n="ct.tag">04 — Contacto</span>
-      <h2 class="section-title">Contact<br><em data-i18n="ct.t2">Have a project in mind? Let's talk!</em></h2>
+      <h2 class="section-title"><span data-i18n="ct.t1">Contact</span><br><em data-i18n="ct.t2">project in mind?</em></h2>
     </div>
 
     <div class="contact-layout fade-up">
@@ -420,7 +421,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </div>
               <div>
-                <div class="ci-label">Email</div>
+                <div class="ci-label" data-i18n="contact.email">Email</div>
                 <a href="mailto:alejo.salasibarra027@gmail.com" class="ci-value">alejo.salasibarra027@gmail.com</a>
               </div>
             </div>
@@ -430,7 +431,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
-                <div class="ci-label">Phone</div>
+                <div class="ci-label" data-i18n="contact.phone">Phone</div>
                 <a href="tel:+573187045572" class="ci-value">+57 318 704 5572</a>
               </div>
             </div>
@@ -440,14 +441,14 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div>
-                <div class="ci-label">Location</div>
+                <div class="ci-label" data-i18n="contact.location">Location</div>
                 <div class="ci-value">Pasto, Nariño, Colombia</div>
               </div>
             </div>
           </div>
 
           <div class="contact-social-block">
-            <h4 class="contact-social-title">Social Media</h4>
+            <h4 class="contact-social-title" data-i18n="contact.social">Social Media</h4>
             <div class="contact-social-links">
               <a href="https://github.com/DavidSalas0273" class="ci-social" aria-label="GitHub" target="_blank" rel="noopener">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.89.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.74-1.56-2.55-.29-5.23-1.27-5.23-5.64 0-1.25.45-2.27 1.2-3.07-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.21 1.17a11.1 11.1 0 0 1 2.92-.39c.99 0 1.99.13 2.92.39 2.23-1.48 3.2-1.17 3.2-1.17.63 1.59.24 2.76.12 3.05.75.8 1.2 1.82 1.2 3.07 0 4.38-2.69 5.34-5.25 5.62.42.36.8 1.08.8 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
@@ -467,7 +468,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <p class="footer-name">Portfolio © 2026</p>
+  <p class="footer-name" data-i18n="footer.name">Portfolio © 2026</p>
       </div>
     </div>
   </footer>
