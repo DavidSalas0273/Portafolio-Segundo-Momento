@@ -364,6 +364,42 @@ em { font-style: italic; font-family: var(--serif); color: var(--accent); }
 .section-tag { display: inline-block; font-family: var(--mono); font-size: 0.78rem; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 1rem; }
 .section-title { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; color: var(--light); }
 
+/* TIMELINE */
+.timeline-wrap { position: relative; padding: 1.5rem 0; }
+/* Mobile: place timeline on the left */
+.timeline-line {
+  position: absolute;
+  left: 28px; /* put the vertical line near the left edge on small screens */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), transparent 60%);
+  transform: none;
+  border-radius: 2px;
+  z-index: 0;
+}
+.timeline-item { position: relative; padding: 1.25rem 0; z-index: 1; }
+.timeline-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1rem 1.25rem; max-width: 680px; margin: 0 0 0 96px; /* leave space on left for the line */
+  position: relative; z-index: 2;
+}
+.tl-meta { position: absolute; top: 1rem; left: 8px; transform: none; font-family: var(--mono); font-size: 0.85rem; color: var(--text2); text-align: left; }
+.tl-dot { position: absolute; left: 24px; transform: none; width: 12px; height: 12px; background: var(--accent); border-radius: 50%; top: 1.25rem; z-index: 3; }
+
+/* Desktop: alternate sides (restore desktop layout) */
+@media (min-width: 900px) {
+  .timeline-wrap { padding: 2rem 0; }
+  .timeline-line { left: 50%; transform: translateX(-50%); }
+  .timeline-card { max-width: 420px; margin: 0; }
+  .timeline-item { display: flex; align-items: flex-start; gap: 2rem; }
+  .timeline-item:nth-child(odd) .timeline-card { margin-left: 0; margin-right: auto; }
+  .timeline-item:nth-child(even) .timeline-card { margin-left: auto; margin-right: 0; }
+  .tl-meta { left: calc(50% + 8px); transform: translateX(0); text-align: left; }
+  .timeline-item:nth-child(even) .tl-meta { left: calc(50% - 8px); transform: translateX(-100%); text-align: right; }
+  .tl-dot { top: 20px; left: 50%; transform: translateX(-50%); }
+}
+
 /* ═══════════════════════════════════════
    ABOUT ME  — fiel a la imagen
 ═══════════════════════════════════════ */
